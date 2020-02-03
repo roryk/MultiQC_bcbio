@@ -31,9 +31,6 @@ setup(
     entry_points = {
         'multiqc.modules.v1': [
             'bcbio = multiqc_bcbio.bcbio:MultiqcModule',
-        ],
-        'multiqc.hooks.v1': [
-            'before_config = multiqc_bcbio:multiqc_bcbio_config',
         ]
     },
     classifiers = [
