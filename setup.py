@@ -9,7 +9,7 @@ For more information about MultiQC, see http://multiqc.info
 
 from setuptools import setup, find_packages
 
-version = '0.2.7'
+version = '0.2.8'
 
 setup(
     name = 'multiqc_bcbio',
@@ -33,7 +33,7 @@ setup(
             'bcbio = multiqc_bcbio.bcbio:MultiqcModule',
         ],
         'multiqc.hooks.v1': [
-            'before_config = multiqc_bcbio:multiqc_bcbio_config',
+            'before_config = multiqc_bcbio.bcbio:multiqc_bcbio_config',
         ]
     },
     classifiers = [
